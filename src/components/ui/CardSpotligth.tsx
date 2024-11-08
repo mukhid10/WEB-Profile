@@ -2,7 +2,7 @@
 
 import { useMotionValue, motion, useMotionTemplate } from "framer-motion";
 import React, { MouseEvent as ReactMouseEvent, useState } from "react";
-import { CanvasRevealEffect } from "@/components/ui/atoms/cancasRefalEffect";
+// import { CanvasRevealEffect } from "@/components/ui/atoms/cancasRefalEffect";
 import { cn } from "@/lib/utils";
 
 export const CardSpotlight = ({
@@ -56,7 +56,7 @@ export const CardSpotlight = ({
           `,
         }}
       >
-        {isHovering && (
+        {/* {isHovering && (
           <CanvasRevealEffect
             animationSpeed={5}
             containerClassName="bg-transparent absolute inset-0 pointer-events-none"
@@ -66,7 +66,7 @@ export const CardSpotlight = ({
             ]}
             dotSize={3}
           />
-        )}
+        )} */}
       </motion.div>
       {children}
     </div>

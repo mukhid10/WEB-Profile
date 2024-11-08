@@ -2,7 +2,6 @@ import { BackgroundBeamsWithCollision } from "@/components/ui/Background";
 import imgMukhid from "../img/4x6 m (1).jpg";
 import Image from "next/image";
 import { FloatingDockComponent } from "@/components/ui/floadingDockComponent";
-import { useState } from "react";
 import Profile from "@/components/Profile";
 import Experience from "@/components/Experience";
 import { Porto } from "@/components/Portofolio";

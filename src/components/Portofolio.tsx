@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import Image4 from "../img/4x6 m (1).jpg";
 import { useOutsideClick } from "./ui/portoClick";
 import amo from "../img/amo1.jpg";
 import odslogin from "../img/odslogin.jpg";
