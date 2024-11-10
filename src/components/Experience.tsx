@@ -21,7 +21,7 @@ function Experience() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-          In 2023, I extended my contract as a PKWT employee until December 1, 2024. At Telkom, I am a Frontend WEB Developer for the Odissey WEB. Odissey is Telkom's internal WEB related to settlements for Telkom's operations or more precisely the business and technology division (DBT).
+          In 2023, I extended my contract as a PKWT employee until December 1, 2024. At Telkom, I am a Frontend WEB Developer for the Odissey WEB. Odissey is Telkom internal WEB related to settlements for Telkom operations or more precisely the business and technology division (DBT).
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -61,7 +61,7 @@ function Experience() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-          I started working at PT. Telkom Indonesia from November 30, 2022 to November 30, 2023. At Telkom, I am a Frontend WEB Developer for the Odissey WEB, Odissey is Telkom internal WEB related to settlement for Telkom's operations or more precisely the business and technology division (DBT).
+          I started working at PT. Telkom Indonesia from November 30, 2022 to November 30, 2023. At Telkom, I am a Frontend WEB Developer for the Odissey WEB, Odissey is Telkom internal WEB related to settlement for Telkom operations or more precisely the business and technology division (DBT).
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
