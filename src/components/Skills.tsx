@@ -25,8 +25,8 @@ export function Skills() {
         <BentoGridItem
           key={i}
           title={item.title}
-          description={item.description}
-          header={item.header}
+          // description={item.description}
+          // header={item.header}
           icon={item.icon}
           img={item.img}
           className={i === 3 || i === 6 ? "md:col-span-2" : ""}
