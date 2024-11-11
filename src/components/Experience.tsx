@@ -142,7 +142,7 @@ function Experience() {
     },
   ];
   return (
-    <div className="w-full h-full overflow-x-auto">
+    <div className="w-full h-screen md:h-full lg:h-full overflow-x-auto">
       <Timeline data={data} />
     </div>
   );

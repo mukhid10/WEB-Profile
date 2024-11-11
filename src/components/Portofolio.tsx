@@ -6,6 +6,7 @@ import { useOutsideClick } from "./ui/portoClick";
 import amo from "../img/amo1.jpg";
 import odslogin from "../img/odslogin.jpg";
 import tpn from "../img/tpn.jpg";
+import digi from "../img/digi.jpg"
 
 export function Porto() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
@@ -34,9 +35,9 @@ export function Porto() {
   useOutsideClick(ref, () => setActive(null));
 
   return (
-    <>
-      <div className="max-w-7xl md:ml-28 py-16 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
+    <div className="h-screen md:h-full lg:h-full overflow-x-auto pb-96 md:pb-0 lg:pb-0">
+      <div className="max-w-7xl md:ml-28 py-3 md:py-16 lg:16 px-4 md:px-8 lg:px-10">
+        <h2 className="text-lg md:text-4xl md:mb-4 lg:mb-4 mb-1 text-black dark:text-white max-w-4xl">
           Portofolio
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-lg">
@@ -145,14 +146,14 @@ export function Porto() {
             onClick={() => setActive(card)}
             className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
-            <div className="flex gap-4 flex-col md:flex-row ">
+            <div className="flex gap-4 flex-col md:flex-row items-center">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <Image
                   width={100}
                   height={100}
                   src={card.src}
                   alt={card.title}
-                  className="h-40 w-40 md:h-14 md:w-14 rounded-lg object-contain object-top"
+                  className="h-40 w-40 md:h-14 md:w-14 rounded-lg object-fill md:object-contain lg:object-contain object-top"
                 />
               </motion.div>
               <div className="">
@@ -179,7 +180,7 @@ export function Porto() {
           </motion.div>
         ))}
       </ul>
-    </>
+    </div>
   );
 }
 
@@ -273,6 +274,21 @@ const cards = [
       return (
         <p>
           In the amospa project I was trusted to develop the Fullstack WEB Developer project myself without collaborating with the team. I developed Amospa Using React JS and other supporting libraries for the Frontend section and using NodeJS ExpressJS and other supporting libraries for the Backend section, in working on this project I was quite happy because it was challenging and able to accommodate all reuirment.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Diginest jasa design grafis",
+    title: "Diginest",
+    src: digi,
+    ctaText: "Inactive",
+    ctaTextList: "Details",
+    ctaLink: '',
+    content: () => {
+      return (
+        <p>
+          in this Diginest project I act as a frontend developer to develop the landing page website, portfolio, and ordering services for graphic design. in its development I use html and javascript to develop the Diginest Website.
         </p>
       );
     },

@@ -16,11 +16,14 @@ import express from "../img/express.png";
 import react from "../img/react.png";
 import reactNative from "../img/reactnative.png";
 import next from "../img/next.jpg";
+import ts from "../img/ts.png";
+import mysql from "../img/mysql.png";
+import mongo from "../img/mongodb.png";
 import Image from "next/image";
 
 export function Skills() {
   return (
-    <BentoGrid className="w-full mx-auto h-full overflow-x-auto pt-5 pb-5">
+    <BentoGrid className="w-full mx-auto h-screen md:h-full lg:h-full overflow-x-auto pt-5 pb-96 md:pb-5 lg:pb-5">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -117,5 +120,38 @@ const items = [
     className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"
   />,
     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "MongoDB",
+    description: "Explore the birth of groundbreaking ideas and inventions.",
+    header: <Skeleton />,
+    img: <Image
+    src={mongo}
+    alt="My Image"
+    className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl"
+  />,
+    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "MySQL",
+    description: "Dive into the transformative power of technology.",
+    header: <Skeleton />,
+    img: <Image
+    src={mysql}
+    alt="My Image"
+    className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-contain"
+  />,
+    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "TypeScript",
+    description: "Discover the beauty of thoughtful and functional design.",
+    header: <Skeleton />,
+    img: <Image
+    src={ts}
+    alt="My Image"
+    className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"
+  />,
+    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
 ];

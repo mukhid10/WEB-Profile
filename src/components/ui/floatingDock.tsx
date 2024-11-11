@@ -36,9 +36,11 @@ const FloatingDockMobile = ({
   items: { title: string; icon: React.ReactNode; href: string }[];
   className?: string;
 }) => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
+  const dispatch = useStore((state) => state.dispatch);
+
   return (
-    <div className={cn("relative block md:hidden", className)}>
+    <div className={cn("absolute right-2 bottom-8 md:hidden", className)}>
       <AnimatePresence>
         {open && (
           <motion.div
@@ -65,7 +67,8 @@ const FloatingDockMobile = ({
                 <Link
                   href={item.href}
                   key={item.title}
-                  className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center"
+                  onClick={()=> dispatch({ tab:  item.title})}
+                  className="h-10 w-10 rounded-full bg-gray-600 bg-opacity-80 flex items-center justify-center"
                 >
                   <div className="h-4 w-4">{item.icon}</div>
                 </Link>
@@ -97,7 +100,7 @@ const FloatingDockDesktop = ({
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
-        "mx-auto hidden md:flex h-16 gap-8 items-end  rounded-2xl bg-gray-600 px-4 pb-3",
+        "mx-auto hidden md:flex h-16 gap-8 items-end  rounded-2xl bg-gray-600 bg-opacity-80 px-4 pb-1",
         className
       )}
     >
@@ -164,7 +167,7 @@ function IconContainer({
   const dispatch = useStore((state) => state.dispatch);
  
   return (
-    <Link href={href} onClick={()=> dispatch({ tab:  title})}>
+    <Link href={href} onClick={()=> dispatch({ tab:  title})} className="flex justify-center align-middle items-center flex-col">
       <motion.div
         ref={ref}
         style={{ width, height }}
@@ -191,6 +194,7 @@ function IconContainer({
           {icon}
         </motion.div>
       </motion.div>
+      <div className="text-xs">{title}</div>
     </Link>
   );
 }
