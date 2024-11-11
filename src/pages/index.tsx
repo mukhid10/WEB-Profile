@@ -59,7 +59,7 @@ export default function Home() {
               }
             </div>
           </div>
-          <div className="md:sticky md:bottom-5">
+          <div className="md:sticky md:bottom-5 animate-bounce">
               <FloatingDockComponent />
           </div>
         </div>
