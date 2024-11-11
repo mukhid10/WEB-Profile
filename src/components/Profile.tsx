@@ -19,7 +19,7 @@ function Profile() {
             duration: 0.5,
             ease: [0.4, 0.0, 0.2, 1],
           }}
-          className="md:px-4 font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto pt-10 md:pt-0 lg:pt-0"
+          className="md:px-4 font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto pt-2 md:pt-0 lg:pt-0"
         >
           A seasoned{" "}
           <Highlight className="text-black dark:text-white">

@@ -40,7 +40,7 @@ const FloatingDockMobile = ({
   const dispatch = useStore((state) => state.dispatch);
 
   return (
-    <div className={cn("absolute right-2 bottom-8 md:hidden", className)}>
+    <div className={cn("absolute right-1 bottom-8 md:hidden", className)}>
       <AnimatePresence>
         {open && (
           <motion.div
